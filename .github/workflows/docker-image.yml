@@ -55,7 +55,7 @@ jobs:
           push: true
           platforms: linux/arm64
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/notificationservice:${{ steps.get_tag.outputs.tag }}
+            ${{ secrets.DOCKER_USERNAME }}/paymentservice:${{ steps.get_tag.outputs.tag }}
 
       - name: Create GitHub Tag
         env:
